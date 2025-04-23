@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <meta name="description" content="Free AI-generated image gallery. Discover and download high-quality images for your creative projects. All images are free to use and share.">
+    <meta name="keywords" content="AI images, free images, image gallery, AI art, creative commons images, free stock photos">
+    <meta name="author" content="Lemaire Valentin">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="g2R1NCKpjJBkueBedW4tyCJ_lSDD0gWB9Q7T51Chj_E" />
+    <link rel="canonical" href="https://ai-gallery-eta.vercel.app/">
+    <title>Free AI Image Gallery | High-Quality AI-Generated Images</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/theme-switch.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/modal.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Free AI Image Gallery",
+        "description": "A collection of high-quality AI-generated images available for free download and use",
+        "url": "https://ai-gallery-eta.vercel.app/",
+        "image": "https://ai-gallery-eta.vercel.app/img/1.png",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="theme-switch-wrapper">
@@ -20,27 +42,28 @@
     
     <header>
         <div class="header-content">
-            <h1>Free Image Gallery</h1>
+            <h1>Free AI Image Gallery</h1>
             <p>This is a gallery of free to look and free to use AI generated images</p>
         </div>
     </header>
 
     <main>
-        <div class="gallery">
+        <div class="gallery" role="list" aria-label="Image gallery">
             <!-- Images will be added here dynamically -->
         </div>
     </main>
 
-    <div class="modal" id="imageModal">
+    <div class="modal" id="imageModal" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Selected image">
+            <span class="close" role="button" aria-label="Close modal">&times;</span>
+            <img id="modalImage" src="" alt="Selected image" role="img">
             <div class="modal-actions">
-                <button id="downloadBtn">Download</button>
+                <button id="downloadBtn" aria-label="Download image">Download</button>
                 <div class="code-snippet">
-                    <h3>Embed Code</h3>
+                    <h3 id="modalTitle">Embed Code</h3>
+                    <p id="modalDescription">Copy this code to embed the image on your website</p>
                     <code id="embedCode"></code>
-                    <button id="copyBtn">Copy Code</button>
+                    <button id="copyBtn" aria-label="Copy embed code">Copy Code</button>
                 </div>
             </div>
         </div>
