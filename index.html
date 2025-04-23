@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <h1>Free Image Gallery</h1>
+            <p>This is a gallery of free to look and free to use AI generated images</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <!-- Images will be added here dynamically -->
+        </div>
+    </main>
+
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Selected image">
+            <div class="modal-actions">
+                <button id="downloadBtn">Download</button>
+                <div class="code-snippet">
+                    <h3>Embed Code</h3>
+                    <code id="embedCode"></code>
+                    <button id="copyBtn">Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

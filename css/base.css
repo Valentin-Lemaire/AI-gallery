@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #FFFCFF;
+    --secondary-color: #241623;
+    --accent-color: #C3B299;
+}
+
+[data-theme="dark"] {
+    --primary-color: #241623;
+    --secondary-color: #FFFCFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+} 
