@@ -40,7 +40,10 @@ const images = [
     { url: 'img/6.png', alt: 'Image 6' },
     { url: 'img/7.png', alt: 'Image 7' },
     { url: 'img/8.png', alt: 'Image 8' },
-    { url: 'img/9.png', alt: 'Image 9' }
+    { url: 'img/9.png', alt: 'Image 9' },
+    { url: 'img/10.png', alt: 'Image 10' },
+    { url: 'img/11.png', alt: 'Image 11' },
+    { url: 'img/12.png', alt: 'Image 12' }
 ];
 
 // Create gallery items
